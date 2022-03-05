@@ -92,16 +92,19 @@ body {
 .activity {
     display: grid;
     grid-template-columns: 260px 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
 }
 
 .work {
     display: grid;
     grid-template-columns: 260px 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
 }
 
 .specialities {
     display: grid;
     grid-template-columns: 260px 2fr 2fr;
+    column-gap: 10px;
 }
 
 .stats {
@@ -120,23 +123,168 @@ body {
 .activity h5 {
     color: rgb(148, 148, 148);
     text-transform: uppercase;
-    font-size: 12x;
+    font-size: 10px;
     margin-top: 0px;
 }
 
 .activity h4 {
-    margin-top: 4px;
+    margin-top: 18px;
     margin-bottom: 5px;
+    font-size: 16px;
 }
 
 .work h5 {
     color: rgb(148, 148, 148);
     text-transform: uppercase;
-    font-size: 12x;
+    font-size: 10px;
     margin-top: 0px;
 }
 
 .work h4 {
-    margin-top: 4px;
+    margin-top: 18px;
     margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.mysp h4 {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.mysp p {
+    color: rgb(148, 148, 148);
+    font-size: 11px;
+}
+
+@media only screen and (max-width: 850px) {
+    .user-stats {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "top1 top2"
+            "main main";
+    }
+
+    .activity {
+        display: grid;
+        grid-template-columns: 260px 1fr 1fr 1fr 1fr;
+        column-gap: 10px;
+    }
+    
+    .work {
+        display: grid;
+        grid-template-columns: 260px 1fr 1fr 1fr 1fr;
+        column-gap: 10px;
+    }
+    
+    .specialities {
+        display: grid;
+        grid-template-columns: 260px 2fr 2fr;
+        column-gap: 10px;
+    }
+
+    .bar1 {
+        grid-area: top1;
+    }
+
+    .bar2 {
+        grid-area: top2;
+    }
+
+    .bar3 {
+        grid-area: main;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .activity {
+        grid-template-columns: 260px 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "top1 top2 top3"
+            "top1 bot2 bot3";
+    }
+
+    .main-tittle1 {
+        grid-area: top1;
+    }
+
+    .act1 {
+        grid-area: top2;
+    }
+
+    .act2 {
+        grid-area: top3;
+    }
+
+    .act3 {
+        grid-area: bot2;
+    }
+
+    .act4 {
+        grid-area: bot3;
+    }
+
+    .work {
+        grid-template-columns: 260px 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "tp1 tp2 tp3"
+            "tp1 bt2 bt3";
+    }
+
+    .main-tittle2 {
+        grid-area: tp1;
+    }
+
+    .at1 {
+        grid-area: tp2;
+    }
+
+    .at2 {
+        grid-area: tp3;
+    }
+
+    .at3 {
+        grid-area: bt2;
+    }
+
+    .at4 {
+        grid-area: bt3;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .user-info {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .activity {
+        display: block;
+        text-align: center;
+    }
+
+    .work {
+        display: block;
+        text-align: center;
+    }
+
+    .specialities {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        text-align: center;
+    }
+    
+    .stats {
+        margin: 5px;
+        padding: 0;
+    } 
+
+    .stats-h {
+        padding: 10px 10px 10px 10px;
+        text-align: center;
+    }
+
 }
