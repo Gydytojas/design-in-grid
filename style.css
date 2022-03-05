@@ -19,6 +19,7 @@ body {
 
 .foto {
     padding: 30px 25px 20px 70px;
+    margin-top: 7px;
 }
 
 .user {
@@ -69,17 +70,73 @@ body {
     color: rgb(148, 148, 148);
 }
 
+.social-links {
+    width: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.icon {
+    max-width: 18px;
+    height: 18px;
+    overflow: hidden;
+    padding: 8px;    
+    border: 2px solid rgb(212, 212, 212);
+}
+
+.icon svg {
+    max-width: 18px;
+    max-height: 18px;
+}
+
 .activity {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 260px 1fr 1fr 1fr 1fr;
 }
 
 .work {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 260px 1fr 1fr 1fr 1fr;
 }
 
 .specialities {
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-columns: 260px 2fr 2fr;
+}
+
+.stats {
+    margin-top: 60px;
+    padding: 20px 40px 30px 20px;
+}
+
+.stats-h {
+    text-transform: uppercase;
+    color: rgb(148, 148, 148);
+    font-size: 14px;
+    text-align: right;
+    padding: 5px 40px 10px 10px;
+}
+
+.activity h5 {
+    color: rgb(148, 148, 148);
+    text-transform: uppercase;
+    font-size: 12x;
+    margin-top: 0px;
+}
+
+.activity h4 {
+    margin-top: 4px;
+    margin-bottom: 5px;
+}
+
+.work h5 {
+    color: rgb(148, 148, 148);
+    text-transform: uppercase;
+    font-size: 12x;
+    margin-top: 0px;
+}
+
+.work h4 {
+    margin-top: 4px;
+    margin-bottom: 5px;
 }
